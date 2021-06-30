@@ -1,6 +1,6 @@
 {
   "name": "@easylogic/editor-plugin-tui-chart",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "simple @toast-chart plugin template for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
@@ -60,7 +60,7 @@
   },
   "peerDependencies": {
     "@easylogic/editor": "^0.10.31",
-    "@toast-ui/chart": "^4.3.5"    
+    "@toast-ui/chart": "^4.3.5"
   },
   "dependencies": {}
 }
