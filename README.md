@@ -11,11 +11,11 @@
 
 # Local Dev 
 
-Please install `vue`
+Please install `vue@next`
 
 ```
 npm install
-npm install @easylogic/editor vue
+npm install -D @easylogic/editor vue@next
 npm run dev 
 ```
 
