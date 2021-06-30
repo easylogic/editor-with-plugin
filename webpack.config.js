@@ -8,18 +8,18 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/'),
     library: {
-      name: 'VuePlugin',
+      name: 'TuiChartPlugin',
       type: 'umd',
       export: ['default']
     },
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "vue": "vue",
+    "@toast-ui/chart": "@toast-ui/chart",
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  },  
+  },
   module: {
     rules: [
       // JavaScript
@@ -27,6 +27,15 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
+      },
+      // CSS, PostCSS, and Sass
+      {
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

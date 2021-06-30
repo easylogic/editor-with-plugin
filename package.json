@@ -1,12 +1,12 @@
 {
-  "name": "@easylogic/editor-plugin-vue",
+  "name": "@easylogic/editor-plugin-tui-chart",
   "version": "0.0.5",
-  "description": "simple vue plugin template for easylogic studio",
+  "description": "simple @toast-chart plugin template for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --config ./webpack.dev.config.js",
+    "dev": "webpack serve --mode development --config ./webpack.dev.config.js --port 3033",
     "release": "release-it *"
   },
   "repository": {
@@ -40,7 +40,8 @@
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-transform-react-jsx": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
-    "@easylogic/editor": "^0.10.31",
+    "@easylogic/editor": "file:../editor",
+    "@toast-ui/chart": "^4.3.5",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
@@ -53,13 +54,13 @@
     "sass": "^1.35.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.0.0",
-    "vue": "^3.1.2",
     "webpack": "^5.41.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
   "peerDependencies": {
-    "@easylogic/editor": "^0.10.31"
+    "@easylogic/editor": "^0.10.31",
+    "@toast-ui/chart": "^4.3.5"    
   },
   "dependencies": {}
 }

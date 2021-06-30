@@ -1,3 +1,9 @@
-import VueComponentPlugin from './VueComponentPlugin';
+import AreaChart from './AreaChart';
+import BarChart from './BarChart';
+import LineChart from './LineChart';
 
-export default VueComponentPlugin
+export default {
+    LineChart,
+    AreaChart,
+    BarChart,
+}    

@@ -1,14 +1,15 @@
-
 import { Component } from "@easylogic/editor";
-import { VUE_COMPONENT_TYPE } from "./constants";
+import { LINE_CHART_TYPE } from "./constants";
 
-export class VueComponentLayer extends Component {
+export class LineChartLayer extends Component {
 
   getDefaultObject(obj = {}) {
     return super.getDefaultObject({
-      itemType: VUE_COMPONENT_TYPE,
-      name: "New Vue Component",
-      value: 'test',
+      itemType: LINE_CHART_TYPE,
+      name: "New Chart",
+      chartType: 'lineChart',
+      chartOption: {},
+      chartData: {},
       ...obj
     }); 
   }
@@ -18,7 +19,9 @@ export class VueComponentLayer extends Component {
     return {
       ...super.toCloneObject(),
       ...this.attrs(
-        'value'
+        'chartType',
+        'chartData',
+        'chartOption',
       ),
     }
   }
@@ -28,7 +31,7 @@ export class VueComponentLayer extends Component {
   }
 
   getDefaultTitle() {
-    return "Vue Component";
+    return "Line Chart";
   }
 
 }
