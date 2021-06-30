@@ -15,7 +15,7 @@ Please install `vue@next`
 
 ```
 npm install
-npm install -D @easylogic/editor vue@next
+npm install -D @easylogic/editor @toast-ui/chart
 npm run dev 
 ```
 
