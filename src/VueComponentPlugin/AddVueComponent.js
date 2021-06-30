@@ -1,6 +1,6 @@
 
 import { MenuItem } from "@easylogic/editor";
-import { REACT_COMPONENT_TYPE } from "./constants";
+import { VUE_COMPONENT_TYPE } from "./constants";
 
 export default class AddReactComponent extends MenuItem {
   getIconString() {
@@ -16,7 +16,7 @@ export default class AddReactComponent extends MenuItem {
   }  
 
   clickButton(e) {
-    this.emit('addLayerView', REACT_COMPONENT_TYPE);
+    this.emit('addLayerView', VUE_COMPONENT_TYPE);
   }
 
 }

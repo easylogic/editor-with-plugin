@@ -1,5 +1,4 @@
-export function ReactComponentLayerInspector (item) {
-  console.log(item); 
+export function VueComponentLayerInspector (item) {
   return [
     {
       key: `value`, 

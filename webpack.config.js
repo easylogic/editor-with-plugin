@@ -8,15 +8,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/'),
     library: {
-      name: 'SimplePlugin',
+      name: 'VuePlugin',
       type: 'umd',
       export: ['default']
     },
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "react": "react",
-    "react-dom": "react-dom",
+    "vue": "vue",
   },
   resolve: {
     extensions: ['.js', '.jsx']

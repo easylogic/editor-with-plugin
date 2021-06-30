@@ -1,11 +1,11 @@
 import editor from '@easylogic/editor';
 import '@easylogic/editor/dist/editor.css';
 
-import ReactComponentPlugin from './ReactComponentPlugin';
+import VuewComponentPlugin from './VueComponentPlugin';
 
 editor.createDesignEditor({
     container: document.getElementById('app'),
     plugins: [
-        ReactComponentPlugin
+        VuewComponentPlugin
     ]
 })

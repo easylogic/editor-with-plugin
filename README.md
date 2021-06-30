@@ -1,4 +1,4 @@
-# React Plugin Template for EasyLogic Studio 
+# Vue Plugin Template for EasyLogic Studio 
 
 ## Features 
 
@@ -11,11 +11,11 @@
 
 # Local Dev 
 
-Please install `react` and `react-dom`
+Please install `vue`
 
 ```
 npm install
-npm install @easylogic/editor react react-dom
+npm install @easylogic/editor vue
 npm run dev 
 ```
 

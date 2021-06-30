@@ -1,7 +1,7 @@
 {
-  "name": "@easylogic/editor-plugin-react",
+  "name": "@easylogic/editor-plugin-vue",
   "version": "0.0.3",
-  "description": "simple react plugin template for easylogic studio",
+  "description": "simple vue plugin template for easylogic studio",
   "main": "./dist/index.js",
   "module": "./src/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easylogic/editor-plugin-react.git"
+    "url": "git+https://github.com/easylogic/editor-plugin-vue.git"
   },
   "keywords": [
     "easylogic",
@@ -19,7 +19,7 @@
     "design",
     "tool",
     "plugin",
-    "react",
+    "vue",
     "component"
   ],
   "author": "easylogic",
@@ -32,9 +32,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/easylogic/editor-plugin-template/issues"
+    "url": "https://github.com/easylogic/editor-plugin-vue/issues"
   },
-  "homepage": "https://github.com/easylogic/editor-plugin-template#readme",
+  "homepage": "https://github.com/easylogic/editor-plugin-vue#readme",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
@@ -49,20 +49,17 @@
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.0",
     "postcss-preset-env": "^6.7.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "release-it": "^14.10.0",
     "sass": "^1.35.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.0.0",
+    "vue": "^3.1.2",
     "webpack": "^5.41.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
   "peerDependencies": {
-    "@easylogic/editor": "^0.10.31",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@easylogic/editor": "^0.10.31"
   },
   "dependencies": {}
 }

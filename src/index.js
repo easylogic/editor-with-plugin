@@ -1,3 +1,3 @@
-import ReactComponentPlugin from './ReactComponentPlugin';
+import VueComponentPlugin from './VueComponentPlugin';
 
-export default ReactComponentPlugin
+export default VueComponentPlugin

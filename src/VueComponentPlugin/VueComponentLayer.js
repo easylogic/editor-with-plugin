@@ -1,19 +1,16 @@
 
 import { Component } from "@easylogic/editor";
-import { REACT_COMPONENT_TYPE } from "./constants";
+import { VUE_COMPONENT_TYPE } from "./constants";
 
-
-export class ReactComponentLayer extends Component {
+export class VueComponentLayer extends Component {
 
   getDefaultObject(obj = {}) {
-    const data = super.getDefaultObject({
-      itemType: REACT_COMPONENT_TYPE,
-      name: "New React Component",
-      value: 'test', 
+    return super.getDefaultObject({
+      itemType: VUE_COMPONENT_TYPE,
+      name: "New Vue Component",
+      value: 'test',
       ...obj
     }); 
-
-    return data;
   }
 
   toCloneObject() {
@@ -31,7 +28,7 @@ export class ReactComponentLayer extends Component {
   }
 
   getDefaultTitle() {
-    return "React Component";
+    return "Vue Component";
   }
 
 }
