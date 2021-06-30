@@ -2,7 +2,7 @@
   "name": "@easylogic/editor-plugin-vue",
   "version": "0.0.3",
   "description": "simple vue plugin template for easylogic studio",
-  "main": "./dist/index.js",
+  "main": "./dist/main.js",
   "module": "./src/index.js",
   "scripts": {
     "build": "webpack --mode production",
