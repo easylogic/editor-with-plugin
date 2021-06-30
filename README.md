@@ -24,3 +24,9 @@ npm run dev
 ```js
 npm run dev 
 ```
+
+# How to build 
+
+```js
+npm run build
+```
