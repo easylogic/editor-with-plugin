@@ -1,6 +1,6 @@
 {
   "name": "@easylogic/editor-plugin-feather-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Feather Icons plugin template for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
