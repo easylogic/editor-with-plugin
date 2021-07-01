@@ -1,5 +1,7 @@
 # Feather Icons Plugin for EasyLogic Studio 
 
+This plugin makes feather icons template layer.
+
 ## Features 
 
 * run new component 
