@@ -1,9 +1,3 @@
-import AreaChart from './AreaChart';
-import BarChart from './BarChart';
-import LineChart from './LineChart';
+import FeatherIconsPlugin from './FeatherIconsPlugin';
 
-export default {
-    LineChart,
-    AreaChart,
-    BarChart,
-}    
+export default FeatherIconsPlugin;

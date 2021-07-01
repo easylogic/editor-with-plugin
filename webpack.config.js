@@ -8,14 +8,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/'),
     library: {
-      name: 'TuiChartPlugin',
+      name: 'FeatherIconsPlugin',
       type: 'umd',
       export: ['default']
     },
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "@toast-ui/chart": "@toast-ui/chart",
+    "feather-icons": "feather-icons",
   },
   resolve: {
     extensions: ['.js', '.jsx']

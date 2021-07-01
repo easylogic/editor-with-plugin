@@ -1,21 +1,15 @@
-# ToastUI Chart Plugin Template for EasyLogic Studio 
+# Feather Icons Plugin for EasyLogic Studio 
 
 ## Features 
 
-* initialize plugin 
-* add UI Element 
-* add MenuItem in sidebar 
-* add Inspector 
-* add Html Renderer 
-* add Layer Model 
+* run new component 
+* add BaseProperty in library 
 
 # Local Dev 
 
-Please install `vue@next`
-
 ```
 npm install
-npm install -D @easylogic/editor @toast-ui/chart
+npm install -D @easylogic/editor feather-icons
 npm run dev 
 ```
 
