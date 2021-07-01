@@ -1,4 +1,4 @@
-# Vue Plugin Template for EasyLogic Studio 
+# ToastUI Chart Plugin Template for EasyLogic Studio 
 
 ## Features 
 
