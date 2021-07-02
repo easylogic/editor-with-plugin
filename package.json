@@ -1,6 +1,6 @@
 {
   "name": "@easylogic/editor-plugin-ant-design-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AntDesign Icons plugin for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
