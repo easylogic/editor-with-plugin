@@ -8,14 +8,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/'),
     library: {
-      name: 'FeatherIconsPlugin',
+      name: 'AntDesignIconsPlugin',
       type: 'umd',
       export: ['default']
     },
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "feather-icons": "feather-icons",
+    "@ant-design/icons-svg": "@ant-design/icons-svg",
   },
   resolve: {
     extensions: ['.js', '.jsx']

@@ -1,5 +1,5 @@
 import { EditorInstance } from "@easylogic/editor";
-import FeatherIconsProperty from "./FeatherIconsProperty";
+import AntDesignIconsSelectProperty from "./AntDesignIconsSelectProperty";
  
 
 /**
@@ -12,6 +12,6 @@ export default function (editor) {
 
     // register control ui 
     editor.registerMenuItem('library', { 
-        FeatherIconsProperty,
+        AntDesignIconsSelectProperty,
     })
 }

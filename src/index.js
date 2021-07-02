@@ -1,3 +1,3 @@
-import FeatherIconsPlugin from './FeatherIconsPlugin';
+import AntDesignIconsPlugin from './AntDesignIconsPlugin';
 
-export default FeatherIconsPlugin;
+export default AntDesignIconsPlugin;

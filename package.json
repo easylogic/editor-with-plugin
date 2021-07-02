@@ -1,17 +1,17 @@
 {
-  "name": "@easylogic/editor-plugin-feather-icons",
-  "version": "0.1.1",
-  "description": "Feather Icons plugin template for easylogic studio",
+  "name": "@easylogic/editor-plugin-ant-design-icons",
+  "version": "0.0.1",
+  "description": "AntDesign Icons plugin for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --config ./webpack.dev.config.js --port 3034",
+    "dev": "webpack serve --mode development --config ./webpack.dev.config.js --port 3035",
     "release": "release-it *"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easylogic/editor-plugin-feather-icons.git"
+    "url": "git+https://github.com/easylogic/editor-plugin-ant-design-icons.git"
   },
   "keywords": [
     "easylogic",
@@ -33,19 +33,18 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/easylogic/editor-plugin-feather-icons/issues"
+    "url": "https://github.com/easylogic/editor-plugin-ant-design-icons/issues"
   },
-  "homepage": "https://github.com/easylogic/editor-plugin-feather-icons#readme",
+  "homepage": "https://github.com/easylogic/editor-plugin-ant-design-icons#readme",
   "devDependencies": {
+    "@ant-design/icons-svg": "^4.1.0",
     "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-transform-react-jsx": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
-    "@easylogic/editor": "^0.10.38",
+    "@easylogic/editor": "^0.10.40",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
-    "feather-icons": "^4.28.0",
     "html-webpack-plugin": "^5.3.2",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.5",
@@ -61,7 +60,7 @@
   },
   "peerDependencies": {
     "@easylogic/editor": "^0.10.37",
-    "feather-icons": "^4.28.0"
+    "@ant-design/icons-svg": "^4.1.0"
   },
   "dependencies": {}
 }

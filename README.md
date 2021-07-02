@@ -1,6 +1,6 @@
-# Feather Icons Plugin for EasyLogic Studio 
+# AntDesign Icons Plugin for EasyLogic Studio 
 
-This plugin makes feather icons template layer.
+This plugin makes ant design icons layer.
 
 ## Features 
 
@@ -11,7 +11,7 @@ This plugin makes feather icons template layer.
 
 ```
 npm install
-npm install -D @easylogic/editor feather-icons
+npm install -D @easylogic/editor @ant-design/icons-svg
 npm run dev 
 ```
 

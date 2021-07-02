@@ -1,12 +1,16 @@
 
+import { renderIconDefinitionToSVGElement } from '@ant-design/icons-svg/es/helpers';
+import * as ant from '@ant-design/icons-svg';
+import { BaseProperty, CLICK, DOMDIFF, Length, LOAD, SUBSCRIBE } from '@easylogic/editor';
 
-import { BaseProperty, CLICK, DOMDIFF, LOAD, SUBSCRIBE } from '@easylogic/editor';
-import feather from 'feather-icons';
+function toSVG(icon, extraSVGAttrs = {}) {
+  return renderIconDefinitionToSVGElement(icon, { extraSVGAttrs })
+}
 
-export default class FeatherIconsProperty extends BaseProperty {
+export default class AntDesignIconsSelectProperty extends BaseProperty {
 
   getClassName() {
-    return 'feather-icons'
+    return 'ant-design-icons'
   }
 
   async afterRender() {
@@ -14,7 +18,7 @@ export default class FeatherIconsProperty extends BaseProperty {
   }
 
   getTitle() {
-    return 'Feather Icons';
+    return 'AntDesign Icons';
   }
 
   getBody() {
@@ -27,15 +31,17 @@ export default class FeatherIconsProperty extends BaseProperty {
 
     return /*html*/`
       <div class='icon-item' data-key="${key}"  title="${icon.name || key}">
-        <div class="icon-svg">${icon.toSvg()}</div>
+        <div class="icon-svg">${toSVG(icon, { fill: 'currentColor' })}</div>
         <div class='title'>${icon.name || key}</div>
       </div>    
     `
   }
 
+
   [LOAD('$body') + DOMDIFF]() {
 
-    const { icons } = feather;
+    const icons = ant;
+
     const keys = Object.keys(icons);
 
     if (this.state.search) {
@@ -49,20 +55,20 @@ export default class FeatherIconsProperty extends BaseProperty {
         .map(key => this.renderIcon(icons[key], key))
     }
 
-
   }
 
   [CLICK('$body .icon-item')](e) {
     var key = e.$dt.data('key');
 
     const center = this.$viewport.center;
+
     this.emit('newComponent', 'template', {
       x: Length.px(center[0] - 100),
       y: Length.px(center[1] - 100),
       width: Length.px(200),
       height: Length.px(200),
       'background-color': 'transparent',
-      template: feather.icons[key].toSvg()
+      template: toSVG(ant[key], { fill: 'currentColor' })
     });
 
   }
