@@ -16,8 +16,7 @@ module.exports = {
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "@easylogic/color": "@easylogic/color",
-    "@emotion/css": "@emotion/css"
+    "@easylogic/color": "@easylogic/color"
   },
   resolve: {
     extensions: ['.js', '.jsx']
