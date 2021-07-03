@@ -41,16 +41,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Color asset plugin for easylogic studio',
+      title: 'editor with plugin',
       template: path.resolve(__dirname, './src/index.html'), // template file
       filename: 'index.html', // output file
     }),
-    new webpack.HotModuleReplacementPlugin(),    
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-    }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 }

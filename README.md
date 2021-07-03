@@ -1,4 +1,4 @@
-# Color asset plugin for EasyLogic Studio 
+# All plugin in editor
 
 This plugin makes color asset property.
 

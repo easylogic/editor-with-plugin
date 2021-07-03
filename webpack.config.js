@@ -1,22 +1,15 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, './src/index.js'),
+    index: path.resolve(__dirname, './src/dev-index.js'),
   },
-  output: {
-    path: path.resolve(__dirname, 'dist/'),
-    library: {
-      name: 'ColorAssetPlugin',
-      type: 'umd',
-      export: ['default']
-    },
-  },
-  externals: {
-    "@easylogic/editor": "@easylogic/editor",
-    "@easylogic/color": "@easylogic/color"
+  output: {    
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'docs/'),
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -44,6 +37,11 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: ['*.LICENSE.txt'],
     }),
+    new HtmlWebpackPlugin({
+      title: 'editor with plugin',
+      template: path.resolve(__dirname, './src/index.html'), // template file
+      filename: 'index.html', // output file
+    }),    
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
