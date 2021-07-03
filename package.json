@@ -1,6 +1,6 @@
 {
   "name": "@easylogic/editor-plugin-color-asset",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Color asset plugin for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
