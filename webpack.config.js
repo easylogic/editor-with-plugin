@@ -1,9 +1,10 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, './src/index.js'),
+    index: path.resolve(__dirname, './src/index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
@@ -15,7 +16,8 @@ module.exports = {
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "@easylogic/color": "@easylogic/color"
+    "@easylogic/color": "@easylogic/color",
+    "@emotion/css": "@emotion/css"
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -31,7 +33,7 @@ module.exports = {
       // CSS, PostCSS, and Sass
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -42,6 +44,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: ['*.LICENSE.txt'],
+    }),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css",
+      chunkFilename: "[id].css",
     }),
   ],
 }
