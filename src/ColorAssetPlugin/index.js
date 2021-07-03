@@ -1,5 +1,5 @@
 import { EditorInstance } from "@easylogic/editor";
-import AntDesignIconsSelectProperty from "./AntDesignIconsSelectProperty";
+import ColorAssetProperty from "./ColorAssetProperty";
  
 
 /**
@@ -11,7 +11,7 @@ import AntDesignIconsSelectProperty from "./AntDesignIconsSelectProperty";
 export default function (editor) {
 
     // register control ui 
-    editor.registerMenuItem('library', { 
-        AntDesignIconsSelectProperty,
+    editor.registerMenuItem('asset', { 
+        ColorAssetProperty,
     })
 }

@@ -8,14 +8,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/'),
     library: {
-      name: 'AntDesignIconsPlugin',
+      name: 'ColorAssetPlugin',
       type: 'umd',
       export: ['default']
     },
   },
   externals: {
     "@easylogic/editor": "@easylogic/editor",
-    "@ant-design/icons-svg": "@ant-design/icons-svg",
+    "@easylogic/color": "@easylogic/color"
   },
   resolve: {
     extensions: ['.js', '.jsx']

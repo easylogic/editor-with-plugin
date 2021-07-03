@@ -1,3 +1,3 @@
-import AntDesignIconsPlugin from './AntDesignIconsPlugin';
+import ColorAssetPlugin from './ColorAssetPlugin';
 
-export default AntDesignIconsPlugin;
+export default ColorAssetPlugin;

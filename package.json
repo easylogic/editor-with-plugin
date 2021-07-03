@@ -1,17 +1,17 @@
 {
-  "name": "@easylogic/editor-plugin-ant-design-icons",
-  "version": "0.0.2",
-  "description": "AntDesign Icons plugin for easylogic studio",
+  "name": "@easylogic/editor-plugin-color-asset",
+  "version": "0.0.4",
+  "description": "Color asset plugin for easylogic studio",
   "main": "./dist/main.js",
   "module": "./src/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --config ./webpack.dev.config.js --port 3035",
+    "dev": "webpack serve --mode development --config ./webpack.dev.config.js --port 3037",
     "release": "release-it *"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easylogic/editor-plugin-ant-design-icons.git"
+    "url": "git+https://github.com/easylogic/editor-plugin-color-asset.git"
   },
   "keywords": [
     "easylogic",
@@ -19,9 +19,8 @@
     "design",
     "tool",
     "plugin",
-    "feather",
-    "icons",
-    "component"
+    "color",
+    "asset"
   ],
   "author": "easylogic",
   "license": "MIT",
@@ -33,15 +32,15 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/easylogic/editor-plugin-ant-design-icons/issues"
+    "url": "https://github.com/easylogic/editor-plugin-color-asset/issues"
   },
-  "homepage": "https://github.com/easylogic/editor-plugin-ant-design-icons#readme",
+  "homepage": "https://github.com/easylogic/editor-plugin-color-asset#readme",
   "devDependencies": {
-    "@ant-design/icons-svg": "^4.1.0",
     "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
-    "@easylogic/editor": "^0.10.40",
+    "@easylogic/color": "0.0.7",
+    "@easylogic/editor": "^0.10.43",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
@@ -60,7 +59,7 @@
   },
   "peerDependencies": {
     "@easylogic/editor": "^0.10.37",
-    "@ant-design/icons-svg": "^4.1.0"
+    "@easylogic/color": "^0.0.7"
   },
   "dependencies": {}
 }

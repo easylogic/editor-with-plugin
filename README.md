@@ -1,6 +1,6 @@
-# AntDesign Icons Plugin for EasyLogic Studio 
+# Color asset plugin for EasyLogic Studio 
 
-This plugin makes ant design icons layer.
+This plugin makes color asset property.
 
 ## Features 
 
@@ -11,7 +11,7 @@ This plugin makes ant design icons layer.
 
 ```
 npm install
-npm install -D @easylogic/editor @ant-design/icons-svg
+npm install -D @easylogic/editor
 npm run dev 
 ```
 
