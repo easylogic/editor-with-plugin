@@ -15,7 +15,6 @@ This plugin makes color asset property.
 
 ```
 npm install
-npm install -D @easylogic/editor @easylogic/color
 npm run dev 
 ```
 
