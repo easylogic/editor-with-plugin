@@ -7,6 +7,10 @@ This plugin makes color asset property.
 * run new component 
 * add BaseProperty in library 
 
+## TODO
+* i18n system 
+* style system 
+
 # Local Dev 
 
 ```
