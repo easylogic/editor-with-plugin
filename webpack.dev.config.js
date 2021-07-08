@@ -1,12 +1,12 @@
 const path = require('path')
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, './src/dev-index.js'),
+    index: path.resolve(__dirname, './src/dev-index.js'),
+    player: path.resolve(__dirname, './src/dev-player.js'),    
   },
   mode: 'development',
   devServer: {
@@ -43,8 +43,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'editor with plugin',
       template: path.resolve(__dirname, './src/index.html'), // template file
-      filename: 'index.html', // output file
+      filename: 'index.html', // output file,
+      excludeChunks: ['player']
     }),
+    new HtmlWebpackPlugin({
+      title: 'player with plugin',
+      template: path.resolve(__dirname, './src/index.html'), // template file
+      filename: 'player.html', // output file
+      excludeChunks: ['index']
+    }),    
     new webpack.HotModuleReplacementPlugin(),
   ],
 }

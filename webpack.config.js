@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     index: path.resolve(__dirname, './src/dev-index.js'),
+    player: path.resolve(__dirname, './src/dev-player.js'),
   },
   output: {    
     filename: '[name].bundle.js',
@@ -41,7 +42,15 @@ module.exports = {
       title: 'editor with plugin',
       template: path.resolve(__dirname, './src/index.html'), // template file
       filename: 'index.html', // output file
+      excludeChunks: ['player']      
     }),    
+
+    new HtmlWebpackPlugin({
+      title: 'editor with plugin',
+      template: path.resolve(__dirname, './src/index.html'), // template file
+      filename: 'player.html', // output file,
+      excludeChunks: ['index']
+    }),        
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
