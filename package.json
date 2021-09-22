@@ -60,7 +60,7 @@
   "dependencies": {
     "@ant-design/icons-svg": "^4.1.0",
     "@easylogic/color": "0.0.7",
-    "@easylogic/editor": "^0.11.8",
+    "@easylogic/editor": "^0.11.23",
     "@easylogic/editor-plugin-ant-design-icons": "0.0.2",
     "@easylogic/editor-plugin-color-asset": "0.0.8",
     "@easylogic/editor-plugin-feather-icons": "^0.1.4",
