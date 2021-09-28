@@ -39,14 +39,14 @@ module.exports = {
       cleanAfterEveryBuildPatterns: ['*.LICENSE.txt'],
     }),
     new HtmlWebpackPlugin({
-      title: 'editor with plugin',
+      title: 'EasyLogic Studio - Fantastic Web Design Tool',
       template: path.resolve(__dirname, './src/index.html'), // template file
       filename: 'index.html', // output file
       excludeChunks: ['player']      
     }),    
 
     new HtmlWebpackPlugin({
-      title: 'editor with plugin',
+      title: 'EasyLogic Studio - Fantastic Web Design Tool',
       template: path.resolve(__dirname, './src/index.html'), // template file
       filename: 'player.html', // output file,
       excludeChunks: ['index']

@@ -41,7 +41,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'editor with plugin',
+      title: 'EasyLogic Studio - Fantastic Web Design Tool',
       template: path.resolve(__dirname, './src/index.html'), // template file
       filename: 'index.html', // output file,
       excludeChunks: ['player']
